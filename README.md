@@ -53,3 +53,4 @@ val userList: List<User> = ...
 setResult(RESULT_OK, userList)
 ```
 3.当从`BFragment`返回到`AFragment`时，之前通过`onResult`方法设置的`Lambda`回调就会运行。
+* 注：`onResult`和`setResult`传递的参数的类型必需一致，MutableList和List是不一样的，当其中一个为MutableList时，应该将类型声明为具体的List类型。
