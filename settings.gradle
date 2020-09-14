@@ -1,0 +1,2 @@
+include ':mortar'
+rootProject.name = "Mortar"
